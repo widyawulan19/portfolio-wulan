@@ -26,7 +26,9 @@ function HeroSection() {
             </div>
 
             <div className="navbar-right">
-                <button>LET'S TALK <MdArrowOutward className='icon'/> </button>
+                <button onClick={()=> window.location.href = "mailto:widyawulan1906@gmail.com"}>
+                    LET'S TALK <MdArrowOutward className='icon'/> 
+                </button>
                 <div className="burger-navbar">
                     <RxHamburgerMenu className='burger-icon' onClick={handleOpen}/>
                 </div>
@@ -64,8 +66,10 @@ function HeroSection() {
                     <p>[ Full-stack developer focused on building user-friendly and scalable digital products. ]</p>
                 </div>
                 <div className="cf-button">
-                    <button>AVAILABLE FOR PROJECT <GoArrowDownRight className='icon'/></button>
-                    <button>VIEW PROJECT <GoArrowDownRight className='icon'/> </button>
+                    <button onClick={()=> window.location.href = "mailto:widyawulan1906@gmail.com"}>
+                        AVAILABLE FOR PROJECT <GoArrowDownRight className='icon'/>
+                    </button>
+                    <a href='#projects'>VIEW PROJECT <GoArrowDownRight className='icon'/> </a>
                 </div>
             </div>
         </div>

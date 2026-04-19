@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/About.css'
+import AOS from 'aos'
 
 function About() {
+    useEffect(()=>{
+        AOS.init({
+            duration:1000,
+            once:false,
+            mirror:true
+        }) 
+    })
+
+
   return (
     <div className='about-container' id='about'>
-        <div className="about-left">
+        <div className="about-left" data-aos='fade-up'>
             <h2>ABOUT ME</h2>
         </div>
 
-        <div className="about-right">
+        <div className="about-right" data-aos='fade-up'>
             <h4>Turning ideas into meaningful digital experiences.</h4>
             <p>
                 I’m a full-stack web developer with 2 years of experience building modern web applications. I focus on creating clean, functional, and user-friendly products—from frontend interfaces to backend systems.

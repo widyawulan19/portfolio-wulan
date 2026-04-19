@@ -1,15 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dataProject from "../Data/DataProject";
 import ProjectModal from "./ProjectModal";
 import { IoArrowForwardOutline,IoLogoGithub } from "react-icons/io5";
 import { MdOutlineDocumentScanner } from "react-icons/md";
+import Aos from "aos";
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
+  useEffect(()=>{
+    Aos.init({
+      duration:1000,
+      once:false
+    })
+  })
+
   return (
     <div className="project-container" id="projects">
-      <div className="project-text">
+      <div className="project-text" data-aos='fade-up'>
         <h5>PROJECTS</h5>
         <h3>Selected Projects</h3>
         <p>A collection of projects focused on solving real-world problems through clean and functional web applications.</p>
@@ -17,14 +25,15 @@ function Projects() {
       
 
       <div className="project-content">
-        {dataProject.map((item) => {
+        {dataProject.map((item,index) => {
           const { id, title, overview, stack, img } = item;
 
           return (
             <div
               key={id}
               className="box-img"
-              
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <img src={img} alt={title} />
 

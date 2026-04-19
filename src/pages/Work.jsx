@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../styles/Work.css'
+import AOS from 'aos'
 
 const steps = [
   {
@@ -30,14 +31,26 @@ const steps = [
 ];
 
 function Work() {
+
+  useEffect(() =>{
+    AOS.init({
+      duration:1000,
+      once:false
+    })
+  })
+
   return (
     <section className="how-container" id="work">
       <h5>Process</h5>
       <h2>How I Work</h2>
 
       <div className="timeline">
-        {steps.map((step) => (
-          <div className="timeline-item" key={step.id}>
+        {steps.map((step, index) => (
+          <div className="timeline-item" 
+            key={step.id}
+            data-aos='fade-up'
+            data-aos-delay={index * 100}
+          >
             <div className="dot"></div>
 
             <div className="content">
