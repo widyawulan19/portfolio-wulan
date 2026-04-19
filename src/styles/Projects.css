@@ -1,0 +1,359 @@
+.project-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-text {
+    /* border: 1px solid blue; */
+    width: 90%;
+    margin: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container h5 {
+    letter-spacing: 5px;
+}
+
+.project-container h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.project-container p {
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.project-content {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+
+    width: 95%;
+    height: 100%;
+}
+
+.box-img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-img .text {
+    /* border: 1px solid blue; */
+    width: 90%;
+    margin: 10px 0px;
+}
+
+.text h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    line-height: 1.5;
+    text-decoration: underline;
+}
+
+.text p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.stack-box {
+    width: 90%;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+
+.stack-box label {
+    font-weight: bold;
+    font-size: 14px;
+    width: fit-content;
+    width: 80px;
+}
+
+.stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.stack-tags button {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #111;
+    color: #fff;
+    padding: 4px 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.project-action {
+    width: 70%;
+    gap: 5px;
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-action button {
+    border: 1px solid #111;
+    border-radius: 20px;
+    color: #111;
+    background-color: #fff;
+    padding: 5px 15px;
+    gap: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.project-action button:hover {
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 650px;
+    width: 80%;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 100%; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container h2 {
+    /* margin: 0px; */
+}
+
+.modal-pic {
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-pic img {
+    width: 80%;
+    height: 100%;
+}
+
+/* =======================
+MODAL MAIN
+======================= */
+.main-modal {
+    width: 100%;
+    margin-top: 15px;
+    /* gap: 15px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+ */
+    /* border: 1px solid green; */
+
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 0px;
+    /* border: 1px solid red; */
+}
+
+.modal-box label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    /* border: 1px solid red; */
+}
+
+.modal-box .overview {
+    background-color: #111;
+    color: #fff;
+    padding: 3px;
+}
+
+.modal-box .line {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20%;
+    margin: 0;
+    align-self: stretch;
+}
+
+.main-modal p {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 5px;
+    /* padding: 0px 10px; */
+}
+
+.modal-box ul {
+    /* border: 1px solid blue; */
+    text-align: left;
+    justify-content: flex-start;
+
+    margin: 0px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.modal-box li {
+    font-size: 12px;
+    padding-left: 10px;
+    line-height: 2;
+}
+
+/* =======================
+MEDIA QUERY
+======================= */
+@media (max-width:1200px) {
+    .project-action {
+        width: 90%;
+    }
+}
+
+@media (max-width:990px) {
+    .project-action {
+        width: 90%;
+    }
+
+    .project-action button {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+@media (max-width:810px) {
+    .project-action {
+        width: 70%;
+        gap: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-action button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px) {
+    .stack-box {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    .text h4 {
+        font-size: 16px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:580px) {
+    .project-container p {
+        text-align: center;
+    }
+
+    .project-content {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-img {
+        width: 80%;
+    }
+}
