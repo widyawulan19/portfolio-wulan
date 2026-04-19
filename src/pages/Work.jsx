@@ -31,7 +31,7 @@ const steps = [
 
 function Work() {
   return (
-    <section className="how-container">
+    <section className="how-container" id="work">
       <h5>Process</h5>
       <h2>How I Work</h2>
 

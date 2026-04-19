@@ -18,11 +18,11 @@ function HeroSection() {
             <h3>WIDYA WULAN</h3>
 
             <div className="navbar-center">
-                <a href="">[ ABOUT ME  ]</a>
-                <a href="">[ PROJECTS ]</a>
-                <a href="">[ HOW I WORK ]</a>
+                <a href="#about">[ ABOUT ME  ]</a>
+                <a href="#projects">[ PROJECTS ]</a>
+                <a href="#work">[ HOW I WORK ]</a>
                 {/* <a href="">[ SERVICES  ]</a> */}
-                <a href="">[ CONTACT ]</a>
+                <a href="#contact">[ CONTACT ]</a>
             </div>
 
             <div className="navbar-right">
@@ -33,11 +33,11 @@ function HeroSection() {
             </div>
             {isOpen && (
                 <div className="burger-open">
-                    <a href="">[ ABOUT ME  ]</a>
-                    <a href="">[ PROJECTS ]</a>
-                    <a href="">[ HOW I WORK ]</a>
+                    <a href="#about">[ ABOUT ME  ]</a>
+                    <a href="#projects">[ PROJECTS ]</a>
+                    <a href="#work">[ HOW I WORK ]</a>
                     {/* <a href="">[ SERVICES  ]</a> */}
-                    <a href="">[ CONTACT ]</a>
+                    <a href="#contact">[ CONTACT ]</a>
                 </div>
             )}
         </div>
@@ -75,10 +75,5 @@ function HeroSection() {
 
 export default HeroSection
 
-
-// NOTE 
-//1. untuk button available for collaboration tambahin link ke Email 
-//2. untuk recent work arahin ke section perojecy
-//3. tambahin icon panah kesamping atas bawah
-
-// I turn real-world ideas into clean and functional web apps.
+// NOTED 
+// LINK NAVBAR BELUM BISA JALAN 

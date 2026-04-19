@@ -4,7 +4,7 @@ import { IoMailUnread, IoLogoGithub,  } from "react-icons/io5";
 
 function Contact() {
   return (
-    <section className="contact-container">
+    <section className="contact-container" id="contact">
       <h2>Let’s Work Together</h2>
 
       <p className="contact-desc">

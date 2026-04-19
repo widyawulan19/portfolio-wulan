@@ -8,7 +8,7 @@ function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="project-container">
+    <div className="project-container" id="projects">
       <div className="project-text">
         <h5>PROJECTS</h5>
         <h3>Selected Projects</h3>
